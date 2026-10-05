@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="DALnet Documentation Project — IRC guides, services documentation and translated help resources.">
+  <title>DALnet Documentation Project</title>
+  <link rel="icon" href="https://docs.dal.net/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aurora aurora-a" aria-hidden="true"></div>
+  <div class="aurora aurora-b" aria-hidden="true"></div>
+  <div class="grid-noise" aria-hidden="true"></div>
+  <div class="network" aria-hidden="true">
+    <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+    <span class="node n4"></span><span class="node n5"></span><span class="node n6"></span>
+    <span class="line l1"></span><span class="line l2"></span><span class="line l3"></span>
+  </div>
+
+  <header class="site-header shell">
+    <a class="brand" href="https://docs.dal.net/" aria-label="DALnet Documentation home">
+      <img src="assets/dalnet-docs-logo.png" alt="DALnet Documentation Team">
+      <span class="brand-divider"></span>
+      <span class="brand-copy">
+        <strong>Documentation</strong>
+        <small>Project</small>
+      </span>
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="https://www.dal.net/">DALnet</a>
+      <a href="https://www.dal.net/services/">Services</a>
+      <a href="mailto:docs@dal.net">Contact</a>
+      <button class="nav-cta" id="languageJump" type="button">Browse languages</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="eyebrow"><span class="status-dot"></span> Community documentation for DALnet</div>
+      <h1>Find the answer.<br><span>Stay connected.</span></h1>
+      <p class="hero-lead">Guides for DALnet, Services, IRC clients and network features — maintained by the Documentation Team and translated for users around the world.</p>
+
+      <form class="search-box" id="docSearch" method="GET" action="https://docs.dal.net/search.htm" role="search">
+		<input type="hidden" name="start" value="1">
+		<div class="search-icon" aria-hidden="true">⌕</div>
+		<label class="sr-only" for="query">Search DALnet documentation</label>
+		<input id="query" name="q" type="search" autocomplete="off" placeholder="Search in your own language…" required>
+		<span class="search-hint">Press Enter</span>
+		<button type="submit">Search docs</button>
+	  </form>
+
+      <div class="hero-meta">
+
+    <a class="meta-pill" href="main.htm">
+        <span>↗</span>
+        English Source
+    </a>
+
+    <a class="meta-pill" href="#languages">
+        <span>19</span>
+        Browse all languages
+    </a>
+
+    <a class="meta-pill" href="#documentation-team">
+        <span>◎</span>
+        Documentation Team
+    </a>
+
+</div>
+    </section>
+
+    <section class="spotlight shell" aria-label="Documentation shortcuts">
+      <article class="feature-card primary-card">
+        <div class="card-kicker">START HERE</div>
+        <div class="feature-icon">#</div>
+        <h2>New to DALnet?</h2>
+        <p>Start with the core documentation and learn the essentials of channels, nicknames, services and IRC etiquette.</p>
+        <a href="https://docs.dal.net/main.htm">Explore documentation <span>→</span></a>
+      </article>
+
+      <article class="feature-card">
+        <div class="card-kicker">SERVICES</div>
+        <div class="feature-icon">/</div>
+        <h2>NickServ & ChanServ</h2>
+        <p>Registration, access, channel management, memos, flags, permissions and service commands.</p>
+        <a href="https://www.dal.net/services/">Open Services <span>→</span></a>
+      </article>
+
+      <article class="feature-card">
+        <div class="card-kicker">REFERENCE</div>
+        <div class="feature-icon">⌘</div>
+        <h2>Quick manual</h2>
+        <p>Need the full reference offline? Open the DALnet documentation manual directly as a PDF.</p>
+        <a href="https://docs.dal.net/pdf/manual.pdf">View manual <span>→</span></a>
+      </article>
+    </section>
+
+    <section class="languages shell" id="languages">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">GLOBAL DOCUMENTATION</span>
+          <h2>Choose your language</h2>
+          <p>Select a language to enter its documentation area.</p>
+        </div>
+        <div class="language-filter-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="languageFilter" type="search" placeholder="Filter languages" aria-label="Filter languages">
+        </div>
+      </div>
+
+      <div class="language-grid" id="languageGrid">
+        <a class="language-card featured-lang" href="https://docs.dal.net/main.htm" data-language="english en">
+          <span class="lang-code">EN</span><span class="lang-copy"><strong>English</strong><small>Primary documentation</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="language-card featured-lang" href="https://docs.dal.net/mainur.htm" data-language="urdu roman urdu ur">
+          <span class="lang-code">UR</span><span class="lang-copy"><strong>Urdu</strong><small>Roman Urdu</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="language-card" href="https://docs.dal.net/maines.htm" data-language="spanish espanol es"><span class="lang-code">ES</span><span class="lang-copy"><strong>Español</strong><small>Spanish</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainde.htm" data-language="german deutsch de"><span class="lang-code">DE</span><span class="lang-copy"><strong>Deutsch</strong><small>German</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainfr.htm" data-language="french francais fr"><span class="lang-code">FR</span><span class="lang-copy"><strong>Français</strong><small>French</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainpt.htm" data-language="portuguese portugues pt"><span class="lang-code">PT</span><span class="lang-copy"><strong>Português</strong><small>Portuguese</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainro.htm" data-language="romanian romana ro"><span class="lang-code">RO</span><span class="lang-copy"><strong>Română</strong><small>Romanian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainru.htm" data-language="russian ru"><span class="lang-code">RU</span><span class="lang-copy"><strong>Русский</strong><small>Russian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainhi.htm" data-language="hindi hi"><span class="lang-code">HI</span><span class="lang-copy"><strong>हिन्दी</strong><small>Hindi</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/maintr.htm" data-language="turkish turkce tr"><span class="lang-code">TR</span><span class="lang-copy"><strong>Türkçe</strong><small>Turkish</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainid.htm" data-language="indonesian bahasa id"><span class="lang-code">ID</span><span class="lang-copy"><strong>Bahasa Indonesia</strong><small>Indonesian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainmy.htm" data-language="malay melayu my"><span class="lang-code">MY</span><span class="lang-copy"><strong>Melayu</strong><small>Malay</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainar.htm" data-language="arabic ar"><span class="lang-code">AR</span><span class="lang-copy"><strong>العربية</strong><small>Arabic</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainhe.htm" data-language="hebrew he"><span class="lang-code">HE</span><span class="lang-copy"><strong>עברית</strong><small>Hebrew</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainse.htm" data-language="swedish svenska se"><span class="lang-code">SE</span><span class="lang-copy"><strong>Svenska</strong><small>Swedish</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainno.htm" data-language="norwegian norsk no"><span class="lang-code">NO</span><span class="lang-copy"><strong>Norsk</strong><small>Norwegian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainit.htm" data-language="italian italiano it"><span class="lang-code">IT</span><span class="lang-copy"><strong>Italiano</strong><small>Italian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/mainba.htm" data-language="bosnian bosanski ba"><span class="lang-code">BA</span><span class="lang-copy"><strong>Bosanski</strong><small>Bosnian</small></span><span class="arrow">↗</span></a>
+        <a class="language-card" href="https://docs.dal.net/maingr.htm" data-language="greek ellinika gr"><span class="lang-code">GR</span><span class="lang-copy"><strong>Ελληνικά</strong><small>Greek</small></span><span class="arrow">↗</span></a>
+      </div>
+      <div class="no-results" id="noResults">No matching language found.</div>
+    </section>
+
+    <section class="team shell" id="documentation-team">
+      <div class="team-card expanded-team">
+        <div class="team-intro">
+          <div>
+            <span class="section-label">THE PEOPLE BEHIND THE DOCS</span>
+            <h2>DALnet Documentation Team.</h2>
+          </div>
+          <div class="team-status" aria-label="Documentation team status">
+            <span class="status-dot"></span>
+            <span>Community maintained</span>
+          </div>
+        </div>
+
+        <div class="team-mission">
+          <p>This team is responsible for all the documents about DALnet, its Services, and various other applications that can be of some help to users on the network. The Docs Team makes them available and understandable for everyone who wishes to consult them. This includes translating documents into a range of languages so users who do not have English as their first language can be accommodated too.
+		  </p>
+        </div>
+
+        <div class="team-content-grid">
+          <div class="team-visual" aria-hidden="true">
+            <div class="terminal">
+              <div class="terminal-top"><i></i><i></i><i></i><span>docs@dalnet</span></div>
+              <div class="terminal-body">
+                <p><span class="prompt">$</span> team --list</p>
+                <p class="ok">✓ 11 team members</p>
+                <p class="muted">leadership: Fredfred</p>
+                <p class="muted">coverage: global translations</p>
+                <p class="muted">status: documentation online</p>
+                <p><span class="prompt">$</span> <span class="cursor"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="members-panel">
+            <div class="members-heading">
+              <span>TEAM MEMBERS</span>
+              <small>Click a name to view the DALnet team profile</small>
+            </div>
+            <div class="member-grid">
+              <a class="member-card leader" href="https://www.dal.net/admin/teams.php?nick=Fredfred">
+                <span class="member-avatar">FR</span><span class="member-info"><strong>Fredfred</strong><small>Team Leader</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=DaRkSaMuRai">
+                <span class="member-avatar">FR</span><span class="member-info"><strong>DaRkSaMuRai</strong><small>Translator · French</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=DreamHealer">
+                <span class="member-avatar">SE</span><span class="member-info"><strong>DreamHealer</strong><small>Translator · Swedish</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=eDdYk0nG">
+                <span class="member-avatar">MY</span><span class="member-info"><strong>eDdYk0nG</strong><small>Translator · Malaysian, Indonesian</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=h">
+                <span class="member-avatar">AR</span><span class="member-info"><strong>h</strong><small>Translator · Arabic</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card featured-member" href="https://www.dal.net/admin/teams.php?nick=Jazzzzz">
+                <span class="member-avatar">UR</span><span class="member-info"><strong>Jazzzzz</strong><small>Translator · Urdu</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=Knz">
+                <span class="member-avatar">MY</span><span class="member-info"><strong>Knz</strong><small>Translator · Malaysian</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=Master_Of_Chaos">
+                <span class="member-avatar">PT</span><span class="member-info"><strong>Master_Of_Chaos</strong><small>Translator · Portuguese</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=Nando">
+                <span class="member-avatar">ES</span><span class="member-info"><strong>Nando</strong><small>Translator · Spanish</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=Speakz">
+                <span class="member-avatar">ES</span><span class="member-info"><strong>Speakz</strong><small>Translator · Spanish</small></span><span class="member-arrow">↗</span>
+              </a>
+              <a class="member-card" href="https://www.dal.net/admin/teams.php?nick=sps">
+                <span class="member-avatar">HI</span><span class="member-info"><strong>sps</strong><small>Translator · Hindi</small></span><span class="member-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-contact-bar">
+          <div class="contact-item">
+            <span class="contact-icon">@</span>
+            <span><small>EMAIL THE TEAM</small><strong>docs@DAL.net</strong></span>
+          </div>
+          <a class="contact-item contact-link" href="http://docs.dal.net/">
+            <span class="contact-icon">↗</span>
+            <span><small>VIEW DOCUMENTATION</small><strong>docs.dal.net</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <strong>DALnet Documentation</strong>
+        <p>Helping users understand IRC since 1997.</p>
+      </div>
+      <div class="footer-links">
+        <a href="main.htm">Main Docs</a>
+        <a href="https://www.dal.net/">DALnet</a>
+        <a href="http://help.dal.net/HelpCommittee">Help Committee</a>
+        <a href="ftp.htm">FTP</a>
+        <a href="https://www.dal.net/services/">Services</a>
+        <a href="mailto:docs@dal.net">Contact</a>
+        <a href="http://kline.dal.net/">KLine</a>
+        <a href="https://users.dal.net/">Users Site</a>
+        <a href="pdf/manual.pdf">Manual</a>
+      </div>
+      <div class="footer-meta">
+        <span id="lastUpdate">Last update: —</span>
+        <span>© 1997–<span id="year"></span> docs.dal.net</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
